@@ -1,19 +1,23 @@
 def calculadora():
-    num1 = float("Ingrese el primer número: ")
-    num2 = float("Ingrese el segundo número: ")
+    num1 = input("Ingrese el primer número: ")
+    num2 = input("Ingrese el segundo número: ")
     operacion = input("Ingrese la operación (+, -, *, /): ")
 
     if operacion == '+':
-        resultado = num + num2
+        resultado = num1 + num2
     elif operacion == '-':
         resultado = num1 - num2
     elif operacion == '*':
         resultado = num1 * num2
     elif operacion == '/':
-        resultado = num / num2
+        resultado = num1 / num2
     else:
         resultado = "Operación no válida"
 
-    print("Resultado: "resultado)
+    return resultado
 
-calculdora()
+calculadora()
+
+# Se cambia print por return
+
+
