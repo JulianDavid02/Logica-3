@@ -1,8 +1,8 @@
 def calculadora():
-    num1 = input("Ingrese el primer número: ")
-    num2 = input("Ingrese el segundo número: ")
-    operacion = input("Ingrese la operación (+, -, *, /): ")
-
+    num1 = float(input("Ingrese el primer número: "))
+    num2 = float(input("Ingrese el segundo número: "))
+    operacion = input ("Ingrese la operación (+, -, *, /): ")
+    
     if operacion == '+':
         resultado = num1 + num2
     elif operacion == '-':
@@ -14,10 +14,10 @@ def calculadora():
     else:
         resultado = "Operación no válida"
 
-    return resultado
+    return print(resultado)
 
 calculadora()
 
-# Se cambia print por return
+# Se agrega return, input en los float
 
 
